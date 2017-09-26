@@ -3,6 +3,14 @@
 Changelog
 =========
 
+4.3.2 (???)
+------------------
+
+**General**
+
+  * The ``es_repo_mgr create`` command now can take ``verify`` as an argument
+    (default is True).
+
 4.3.1 (9 May 2017)
 ------------------
 

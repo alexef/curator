@@ -895,6 +895,7 @@ def create_repository(client, **kwargs):
         raise MissingArgument('Missing required parameter "repository"')
     else:
         repository = kwargs['repository']
+    params = {'verify': 'true' if kwargs.pop('verify', True) else 'false'}
 
     try:
         body = create_repo_body(**kwargs)
@@ -909,7 +910,7 @@ def create_repository(client, **kwargs):
                     repository
                 )
             )
-            client.snapshot.create_repository(repository=repository, body=body)
+            client.snapshot.create_repository(repository=repository, body=body, params=params)
         elif result is not None and repository not in result:
             logger.debug(
                 'Repository {0} not in Elasticsearch. Continuing...'.format(
