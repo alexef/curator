@@ -16,6 +16,11 @@ Changelog
   * The ``es_repo_mgr create`` command now can take ``verify`` as an argument
     (default is True).
 
+**New features**
+
+  * Add a ``restore`` function to ``curator_cli`` singleton. Mentioned in
+    #851 (alexef)
+
 5.1.1 (8 June 2017)
 
 **Bug Fixes**
