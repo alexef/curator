@@ -3,6 +3,13 @@
 Changelog
 =========
 
+4.3.2 (???)
+
+**New Features**
+
+  * Add ``restore`` command to singleton cli (alexef)
+
+
 4.3.1 (9 May 2017)
 ------------------
 
